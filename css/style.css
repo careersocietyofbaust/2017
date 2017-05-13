@@ -1,0 +1,445 @@
+/*@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Roboto:300,400,500,700');*/
+
+
+/* Base CSS */
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+
+a:focus {
+    outline: 0 solid
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html,
+body {
+    height: 100%
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+a:hover {
+    text-decoration: none
+}
+
+
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+.welcome-hero-area,
+.welcome-slider-area,
+.welcome-slider-area div {
+    height: 100%;
+}
+
+.welcome-hero-area div.slide-item-tablecell,
+.welcome-hero-area div.slide-item-tablecell div {
+    height: auto;
+}
+
+.member-slider-area,
+.member-slider-area div {
+    height: 100%;
+}
+
+.member-slider-area div.slide-item-tablecell,
+.member-slider-area div.slide-item-tablecell div {
+    height: auto;
+}
+
+.slide-item-tablecell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.slide-item-table {
+    display: table;
+    text-align: center;
+    width: 100%;
+}
+
+.single-slide-item {
+    background-size: cover;
+}
+
+.slide-1 {
+    background-image: url(../img/background/header-bg.jpg);
+}
+
+.slide-2 {
+    background-image: url(../img/background/header-bg-1.jpg);
+}
+
+.slide-3 {
+    background-image: url(../img/background/header-bg-2.jpg);
+}
+
+.slide-4 {
+    background-image: url(../img/background/header-bg-3.jpg);
+}
+
+.single-slide-item {
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.single-slide-item::after {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#09052f+0,311d5e+100 */
+    background: #09052f;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #09052f 0%, #311d5e 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #09052f 0%, #311d5e 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #09052f 0%, #311d5e 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#09052f', endColorstr='#311d5e', GradientType=0);
+    /* IE6-9 */
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.carousel-fade .carousel-inner .item {
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    opacity: 0;
+}
+
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+.header-area {
+    left: 0;
+    padding-top: 15px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.mainmenu {
+    font-size: 13px;
+    font-weight: 700;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.logo-area {
+    float: left;
+}
+
+.logo-area img {
+    height: 100px;
+}
+
+.logo-name h2 {
+    color: #fff;
+    font-size: 90px;
+}
+
+.mainmenu ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+.mainmenu li {
+    display: inline-block;
+    padding: 45px 0 15px 30px;
+    position: relative;
+}
+
+.mainmenu li a {
+    color: #fff;
+    display: block;
+}
+
+.mainmenu li a:hover {
+    color: #00e0d0;
+}
+
+.single-slide-item h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.slide-btn,
+.content-btn {
+    border: 1px solid #00e0d0;
+    color: #00e0d0;
+    display: inline-block;
+    font-weight: 700;
+    margin-top: 12px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.single-slide-item h2::after {
+    background: #00e0d0 none repeat scroll 0 0;
+    content: "";
+    height: 1px;
+    left: 50%;
+    margin-left: -30px;
+    position: absolute;
+    width: 60px;
+    bottom: 0;
+}
+
+.content-section {
+    padding: 50px 0;
+}
+
+.our-story-area {
+    background-image: url("../img/header-bg-1.jpg");
+    background-size: cover;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: table;
+    position: relative;
+}
+
+.our-story-area::after,
+.member-slider-area::after {
+    background: #09052f;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #09052f 0%, #311d5e 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #09052f 0%, #311d5e 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #09052f 0%, #311d5e 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#09052f', endColorstr='#311d5e', GradientType=0);
+    /* IE6-9 */
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.our-story-area-tablecell {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.our-story-area-tablecell p {
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.section-header h2 {
+  border: 5px solid;
+  color: #04cdbd;
+  font-size: 40px;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  width: 250px;
+}
+.section-header {
+    margin-bottom: 50px;
+}
+
+.single-featured-item {
+    border: 1px solid #0e0e0e;
+    border-radius: 0 0 25px 25px;
+    line-height: 30px;
+    margin-bottom: 25px;
+    padding-bottom: 21px;
+    text-align: center;
+}
+
+.single-featured-item h3 {
+    font-size: 30px;
+    margin-bottom: -5px;
+    margin-top: 20px;
+}
+
+.single-featured-item i {
+    color: #00e0d0;
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+.single-featured-item-btn {
+    border: 1px solid #00e0d0;
+    color: #00e0d0;
+    display: inline-block;
+    font-weight: 700;
+    margin-top: 12px;
+    padding: 2px 30px;
+    text-transform: uppercase;
+}
+
+.member-slide-area {
+    height: 100%;
+}
+
+.single-item {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-bottom: 2px solid;
+    border-image: none;
+    border-left: 2px solid;
+    border-radius: 25px;
+    border-right: 2px solid;
+}
+
+.single-item img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.single-item a:hover {
+    opacity: .6;
+}
+
+.single-slide-item-heading {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid;
+    font-size: 30px;
+}
+
+.single-partners-item img {
+    box-shadow: 4px 7px 7px #666;
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+}
+
+.emailsend {
+    float: right;
+    margin-right: 15px;
+}
+
+.btn {
+    padding: 8px 45px;
+}
+
+.contact-header {
+    border-bottom: 2px dotted #449D44;
+    border-top: 2px dotted #449D44;
+    border-radius: 50%;
+    font-size: 38px;
+    color: #449D44;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.social {
+    margin: 15px 0;
+}
+
+.footer {
+    background: #9ba490 none repeat scroll 0 0;
+    color: #fff;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+
+.social a img:hover {
+    opacity: .6;
+}
+.social a img{
+    height: 60px;
+    width: 60px;
+
+}
+.counter {
+    float: right;
+}
+
+#map {
+    display: block;
+    width: 95%;
+    height: 350px;
+    margin: 0 auto;
+    -moz-box-shadow: 0px 5px 20px #ccc;
+    -webkit-box-shadow: 0px 5px 20px #ccc;
+    box-shadow: 0px 5px 20px #ccc;
+}
+
+#map.large {
+    height: 500px;
+}
